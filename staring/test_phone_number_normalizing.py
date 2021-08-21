@@ -19,3 +19,4 @@ class TestPhoneNumberNormalization(unittest.TestCase):
 
     def test_number_can_only_contain_digits(self) -> None:
         self.assertEqual("number contains invalid characters 'abc'", normalize_phone_number('1a34b67c9'))
+        self.assertEqual("number contains invalid characters 'xyz'", normalize_phone_number('1x34y67z9'))
