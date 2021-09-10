@@ -7,6 +7,7 @@ class TestUser(unittest.TestCase):
 
     def test_user_has_a_name(self) -> None:
         user = User.create("Kinga", "Teresa")
+        User.create("Piotr", "Kopalko")
         self.assertEqual(user.name(), "Kinga Teresa")
 
     def test_user_needs_approval_after_creation(self) -> None:
