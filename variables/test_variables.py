@@ -9,9 +9,9 @@ class TestVariables(unittest.TestCase):
         self.assertEqual(procent_mleka_w_kawie, expected=0.05)
 
     def test_variable_types(self) -> None:
-        self.assertIsinstance(imie_babci, expected=str)
-        self.assertIsinstance(numer_buta, expected=int)
-        self.assertIsinstance(lista_zakupów, expected=list)
-        self.assertIsinstance(słownik_wyrazów_bliskoznacznych, expected=dict)
-        self.assertIsinstance(dziesięć_przykazań, expected=tuple)
-        self.assertIsinstance(dziesięć_i_pół_przykazań, expected=float)
+        self.assertIsInstance(imie_babci, expected=str)
+        self.assertIsInstance(numer_buta, expected=int)
+        self.assertIsInstance(lista_zakupów, expected=list)
+        self.assertIsInstance(słownik_wyrazów_bliskoznacznych, expected=dict)
+        self.assertIsInstance(dziesięć_przykazań, expected=tuple)
+        self.assertIsInstance(dziesięć_i_pół_przykazań, expected=float)
