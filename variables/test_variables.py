@@ -15,3 +15,13 @@ class TestVariables(unittest.TestCase):
         self.assertIsInstance(słownik_wyrazów_bliskoznacznych, cls=dict)
         self.assertIsInstance(dziesięć_przykazań, cls=tuple)
         self.assertIsInstance(dziesięć_i_pół_przykazań, cls=float)
+
+    def test_changing_variables(self) -> None:
+        wiek = 117
+        wiek = odmłodź(wiek)
+        def odmłódź(wiek):
+            #tu napisz rozwiązanie
+        self.assertEqual(wiek, expected=17)
+        lista_numerów = list(112, 5, 80, 115, 45, 49)
+        #tu napisz rozwiązanie
+        self.assertEqual([5, 45, 49, 80, 112, 115], lista_numerów)
