@@ -1,12 +1,21 @@
 import unittest
 
+cena_soku = 14
+imie = "Piotr"
+procent_mleka_w_kawie = 0.05
+imie_babci= ""
+numer_buta = 41
+lista_zakupów= []
+słownik_wyrazów_bliskoznacznych={}
+dziesięć_przykazań=()
+dziesięć_i_pół_przykazań=float()
 
 class TestVariables(unittest.TestCase):
 
     def test_variable_names(self) -> None:
-        self.assertEqual(cena_soku, expected=14)
-        self.assertEqual(imie, expected="Piotr")
-        self.assertEqual(procent_mleka_w_kawie, expected=0.05)
+        self.assertEqual(cena_soku, 14)
+        self.assertEqual(imie, "Piotr")
+        self.assertEqual(procent_mleka_w_kawie, 0.05)
 
     def test_variable_types(self) -> None:
         self.assertIsInstance(imie_babci, cls=str)
@@ -18,10 +27,11 @@ class TestVariables(unittest.TestCase):
 
     def test_changing_variables(self) -> None:
         wiek = 117
+        def odmłodź(wiek):
+            wiek = wiek -100
+            return wiek
         wiek = odmłodź(wiek)
-        def odmłódź(wiek):
-            #tu napisz rozwiązanie
-        self.assertEqual(wiek, expected=17)
-        lista_numerów = list(112, 5, 80, 115, 45, 49)
-        #tu napisz rozwiązanie
+        self.assertEqual(wiek, 17)
+        lista_numerów = (112, 5, 80, 115, 45, 49)
+        lista_numerów = sorted(lista_numerów)
         self.assertEqual([5, 45, 49, 80, 112, 115], lista_numerów)
